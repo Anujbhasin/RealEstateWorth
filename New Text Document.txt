@@ -1,0 +1,18 @@
+from tkinter import *
+root=Tk()
+
+root.state('zoomed')
+root.resizable(width=False,height=False)
+root.configure(background='green')
+
+l=Label(root,text='RESULT',fg='orange',bg='green',pady=100,font=('',60,'bold'))
+l.pack()
+l1=Label(root,text='Price of real estate',fg='orange',bg='green',font=('',30))
+l1.place(x=600,y=400)
+l2=Label(root,text='NA',fg='orange',bg='green',font=('',30))
+l2.place(x=1200,y=400)
+
+b=Button(root,text='BACK',justify='center',font=('',30,'bold'),bg='orange')
+b.place(x=900,y=900)
+
+root.mainloop()
